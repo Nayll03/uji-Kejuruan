@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    width: 80%;
+    margin: 15px auto 0;
+    background-color: lavender;
+}
+
+#persegipanjangForm {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "name name" "age roll" "button button";
+}
+
+#persegipanjangForm * {
+    margin: 7px;
+    padding: 10px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+#persegipanjangForm button {
+    outline: none;
+    background-color: #64dded;
+    color: white;
+    border: 5px solid transparent;
+    cursor: pointer;
+}
+
+#persegipanjangForm input {
+    border: 6px solid #64dded;
+    outline: none;
+}
+
+#persegipanjangForm input:focus {
+    border: 5px solid #64dded;
+}
+
+#persegipanjangForm button:active {
+    border-color: #64dded;
+}
